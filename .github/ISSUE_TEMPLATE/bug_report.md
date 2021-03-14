@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve Termux application
+about: Create a report to help us improve termuwux application
 
 ---
 
@@ -30,6 +30,6 @@ A clear and concise description of what you expected to happen.
 
 **Additional information**
 
-* Termux application version:
+* termuwux application version:
 * Android OS version:
 * Device model:

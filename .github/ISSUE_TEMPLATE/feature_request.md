@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest a new feature for Termux application
+about: Suggest a new feature for termuwux application
 
 ---
 

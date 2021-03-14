@@ -10,9 +10,9 @@
         tools:targetApi="n_mr1">
         <intent
             android:action="android.intent.action.RUN"
-            android:targetPackage="com.termux"
-            android:targetClass="com.termux.app.TermuxActivity">
-            <extra android:name="com.termux.app.failsafe_session" android:value="true" />
+            android:targetPackage="com.termuwux"
+            android:targetClass="com.termuwux.app.termuwuxActivity">
+            <extra android:name="com.termuwux.app.failsafe_session" android:value="true" />
         </intent>
     </shortcut>
 

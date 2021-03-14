@@ -1,14 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.termux"
+    package="com.termuwux"
     android:installLocation="internalOnly"
-    android:sharedUserId="com.termux"
+    android:sharedUserId="com.termuwux"
     android:sharedUserLabel="@string/shared_user_label" >
 
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.software.leanback" android:required="false" />
 
-    <permission android:name="com.termux.permission.RUN_COMMAND"
+    <permission android:name="com.termuwux.permission.RUN_COMMAND"
         android:label="@string/run_command_permission_label"
         android:description="@string/run_command_permission_description"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +32,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:banner="@drawable/banner"
         android:label="@string/application_name"
-        android:theme="@style/Theme.Termux"
+        android:theme="@style/Theme.termuwux"
         android:supportsRtl="false" >
 
         <!-- This (or rather, value 2.1 or higher) is needed to make the Samsung Galaxy S8
@@ -40,7 +40,7 @@
         <meta-data android:name="android.max_aspect" android:value="10.0" />
 
         <activity
-            android:name="com.termux.app.TermuxActivity"
+            android:name="com.termuwux.app.termuwuxActivity"
 	    android:label="@string/application_name"
 	    android:configChanges="orientation|screenSize|smallestScreenSize|density|screenLayout|uiMode|keyboard|keyboardHidden|navigation"
             android:launchMode="singleTask"
@@ -58,17 +58,17 @@
         </activity>
 
         <activity
-            android:name="com.termux.app.TermuxHelpActivity"
+            android:name="com.termuwux.app.termuwuxHelpActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Material.Light.DarkActionBar"
-            android:parentActivityName=".app.TermuxActivity"
+            android:parentActivityName=".app.termuwuxActivity"
             android:resizeableActivity="true"
             android:label="@string/application_name" />
 
         <activity
-            android:name="com.termux.filepicker.TermuxFileReceiverActivity"
+            android:name="com.termuwux.filepicker.termuwuxFileReceiverActivity"
             android:label="@string/application_name"
-            android:taskAffinity="com.termux.filereceiver"
+            android:taskAffinity="com.termuwux.filereceiver"
             android:excludeFromRecents="true"
             android:resizeableActivity="true"
             android:noHistory="true">
@@ -84,7 +84,7 @@
                 <data android:mimeType="text/*" />
                 <data android:mimeType="video/*" />
             </intent-filter>
-            <!-- Accept multiple file types to let Termux be usable as generic file viewer. -->
+            <!-- Accept multiple file types to let termuwux be usable as generic file viewer. -->
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -98,7 +98,7 @@
 
         <activity-alias
             android:name=".HomeActivity"
-            android:targetActivity="com.termux.app.TermuxActivity">
+            android:targetActivity="com.termuwux.app.termuwuxActivity">
 
             <!-- Launch activity automatically on boot on Android Things devices -->
             <intent-filter>
@@ -109,8 +109,8 @@
         </activity-alias>
 
         <provider
-            android:name=".filepicker.TermuxDocumentsProvider"
-            android:authorities="com.termux.documents"
+            android:name=".filepicker.termuwuxDocumentsProvider"
+            android:authorities="com.termuwux.documents"
             android:grantUriPermissions="true"
             android:exported="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
@@ -120,25 +120,25 @@
         </provider>
 
         <service
-            android:name="com.termux.app.TermuxService"
+            android:name="com.termuwux.app.termuwuxService"
             android:exported="false" />
 
         <service
             android:name=".app.RunCommandService"
             android:exported="true"
-            android:permission="com.termux.permission.RUN_COMMAND" >
+            android:permission="com.termuwux.permission.RUN_COMMAND" >
             <intent-filter>
-                <action android:name="com.termux.RUN_COMMAND" />
+                <action android:name="com.termuwux.RUN_COMMAND" />
             </intent-filter>
         </service>
 
-        <receiver android:name=".app.TermuxOpenReceiver" />
+        <receiver android:name=".app.termuwuxOpenReceiver" />
 
-        <provider android:authorities="com.termux.files"
+        <provider android:authorities="com.termuwux.files"
                   android:readPermission="android.permission.permRead"
                   android:exported="true"
                   android:grantUriPermissions="true"
-                  android:name="com.termux.app.TermuxOpenReceiver$ContentProvider" />
+                  android:name="com.termuwux.app.termuwuxOpenReceiver$ContentProvider" />
 	<meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
 	<meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="true"/>
     </application>

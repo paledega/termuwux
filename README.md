@@ -1,39 +1,39 @@
-# Termux application
+# termuwux application
 
-[![Build status](https://github.com/termux/termux-app/workflows/Build/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Testing status](https://github.com/termux/termux-app/workflows/Unit%20tests/badge.svg)](https://github.com/termux/termux-app/actions)
-[![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
+[![Build status](https://github.com/termuwux/termuwux-app/workflows/Build/badge.svg)](https://github.com/termuwux/termuwux-app/actions)
+[![Testing status](https://github.com/termuwux/termuwux-app/workflows/Unit%20tests/badge.svg)](https://github.com/termuwux/termuwux-app/actions)
+[![Join the chat at https://gitter.im/termuwux/termuwux](https://badges.gitter.im/termuwux/termuwux.svg)](https://gitter.im/termuwux/termuwux)
 
-[Termux](https://termux.com) is an Android terminal application and Linux environment.
+[termuwux](https://termuwux.com) is an Android terminal application and Linux environment.
 
-- [Termux Reddit community](https://reddit.com/r/termux)
-- [Termux Wiki](https://wiki.termux.com/wiki/)
-- [Termux Twitter](http://twitter.com/termux/)
+- [termuwux Reddit community](https://reddit.com/r/termuwux)
+- [termuwux Wiki](https://wiki.termuwux.com/wiki/)
+- [termuwux Twitter](http://twitter.com/termuwux/)
 
 Note that this repository is for the app itself (the user interface and the
 terminal emulation). For the packages installable inside the app, see
-[termux/termux-packages](https://github.com/termux/termux-packages)
+[termuwux/termuwux-packages](https://github.com/termuwux/termuwux-packages)
 
 ***
 
-**@termux is looking for Termux Application maintainer for implementing new features,
+**@termuwux is looking for termuwux Application maintainer for implementing new features,
 fixing bugs and reviewing pull requests since current one (@fornwall) is inactive.**
 
-Issue https://github.com/termux/termux-app/issues/1072 needs extra attention.
+Issue https://github.com/termuwux/termuwux-app/issues/1072 needs extra attention.
 
 ***
 
 ## Installation
 
-Termux application can be obtained from [F-Droid](https://f-droid.org/en/packages/com.termux/).
+termuwux application can be obtained from [F-Droid](https://f-droid.org/en/packages/com.termuwux/).
 
 Additionally we provide per-commit debug builds for those who want to try
 out the latest features or test their pull request. This build can be obtained
-from one of the workflow runs listed on [Github Actions](https://github.com/termux/termux-app/actions)
+from one of the workflow runs listed on [Github Actions](https://github.com/termuwux/termuwux-app/actions)
 page.
 
 Signature keys of all offered builds are different. Before you switch the
-installation source, you will have to uninstall the Termux application and
+installation source, you will have to uninstall the termuwux application and
 all currently installed plugins.
 
 ## Terminal resources
@@ -66,5 +66,5 @@ all currently installed plugins.
 
 - Connectbot: Android SSH client. [Source](https://github.com/connectbot/connectbot)
 
-- Android Terminal Emulator: Android terminal app which Termux terminal handling
+- Android Terminal Emulator: Android terminal app which termuwux terminal handling
   is based on. Inactive. [Source](https://github.com/jackpal/Android-Terminal-Emulator).

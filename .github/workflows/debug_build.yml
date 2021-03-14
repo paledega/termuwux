@@ -22,5 +22,5 @@ jobs:
     - name: Store generated APK file
       uses: actions/upload-artifact@v2
       with:
-        name: termux-app
+        name: termuwux-app
         path: ./app/build/outputs/apk/debug
