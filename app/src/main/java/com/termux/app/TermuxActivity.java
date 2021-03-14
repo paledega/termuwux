@@ -533,7 +533,7 @@ public final class TermuxActivity extends Activity implements ServiceConnection 
             return true;
         });
 
-        if (mTermService.getSessions().isEmpty()) {
+        if (false && mTermService.getSessions().isEmpty()) {
             if (mIsVisible) {
                 TermuxInstaller.setupIfNeeded(TermuxActivity.this, () -> {
                     if (mTermService == null) return; // Activity might have been destroyed.
@@ -553,14 +553,15 @@ public final class TermuxActivity extends Activity implements ServiceConnection 
                 finish();
             }
         } else {
-            Intent i = getIntent();
-            if (i != null && Intent.ACTION_RUN.equals(i.getAction())) {
+            //Intent i = getIntent();
+            //if (i != null && Intent.ACTION_RUN.equals(i.getAction())) {
                 // Android 7.1 app shortcut from res/xml/shortcuts.xml.
-                boolean failSafe = i.getBooleanExtra(TERMUX_FAILSAFE_SESSION_ACTION, false);
+              //  boolean failSafe = i.getBooleanExtra(TERMUX_FAILSAFE_SESSION_ACTION, false);
+                boolean failSafe = true;
                 addNewSession(failSafe, null);
-            } else {
-                switchToSession(getStoredCurrentSessionOrLast());
-            }
+            //} else {
+                //switchToSession(getStoredCurrentSessionOrLast());
+            //}
         }
     }
 
